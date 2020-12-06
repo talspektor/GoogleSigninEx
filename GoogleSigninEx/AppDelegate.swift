@@ -6,16 +6,28 @@
 //  Copyright © 2020 Tal Spektor. All rights reserved.
 //
 
+import GoogleSignIn
 import UIKit
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance()?.clientID = "569352977408-s4rsf1lsupag2egul5k7ba3hcr5lta50.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance()?.delegate = self
         return true
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        print("User email: \(user.profile.email ?? "No Email")")
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
     }
 
     // MARK: UISceneSession Lifecycle

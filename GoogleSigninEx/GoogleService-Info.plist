@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>569352977408-s4rsf1lsupag2egul5k7ba3hcr5lta50.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.569352977408-s4rsf1lsupag2egul5k7ba3hcr5lta50</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>569352977408-op6e408f2bvb3nq230rclf64mpdgqf6s.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDodF00ii9t_XZAL8I4ebh0F2CKhLiVJes</string>
+	<key>GCM_SENDER_ID</key>
+	<string>569352977408</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.talspektor.MyConfig</string>
+	<key>PROJECT_ID</key>
+	<string>fir-ce67b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-ce67b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:569352977408:ios:8facc720b261bcba3dece5</string>
+	<key>DATABASE_URL</key>
+	<string>https://fir-ce67b.firebaseio.com</string>
+</dict>
+</plist>
